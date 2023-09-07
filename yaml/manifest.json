@@ -1,0 +1,339 @@
+{
+  "version": "34.0.0",
+  "artifacts": {
+    "CdkAssessmentStack.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "CdkAssessmentStack.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "CdkAssessmentStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "CdkAssessmentStack.template.json",
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/887836ac4f4353721b274fcf10a5a3349886615d283608a802399befd3cad82a.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "CdkAssessmentStack.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "CdkAssessmentStack.assets"
+      ],
+      "metadata": {
+        "/CdkAssessmentStack/SSM-Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SSMRoleBB9189E3"
+          }
+        ],
+        "/CdkAssessmentStack/myVPC/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myVPC01512990"
+          }
+        ],
+        "/CdkAssessmentStack/myVPC/PublicSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myVPCPublicSubnet1Subnet9086CB81"
+          }
+        ],
+        "/CdkAssessmentStack/myVPC/PublicSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myVPCPublicSubnet1RouteTable0F53E029"
+          }
+        ],
+        "/CdkAssessmentStack/myVPC/PublicSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myVPCPublicSubnet1RouteTableAssociation6DB4D692"
+          }
+        ],
+        "/CdkAssessmentStack/myVPC/PublicSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myVPCPublicSubnet1DefaultRoute81AA5C1B"
+          }
+        ],
+        "/CdkAssessmentStack/myVPC/PublicSubnet1/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myVPCPublicSubnet1EIP81916D1B"
+          }
+        ],
+        "/CdkAssessmentStack/myVPC/PublicSubnet1/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myVPCPublicSubnet1NATGateway55A6651E"
+          }
+        ],
+        "/CdkAssessmentStack/myVPC/PublicSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myVPCPublicSubnet2Subnet820C8D9D"
+          }
+        ],
+        "/CdkAssessmentStack/myVPC/PublicSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myVPCPublicSubnet2RouteTable50C128BC"
+          }
+        ],
+        "/CdkAssessmentStack/myVPC/PublicSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myVPCPublicSubnet2RouteTableAssociation4B7D9EBD"
+          }
+        ],
+        "/CdkAssessmentStack/myVPC/PublicSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myVPCPublicSubnet2DefaultRoute29E3DDA0"
+          }
+        ],
+        "/CdkAssessmentStack/myVPC/PublicSubnet2/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myVPCPublicSubnet2EIPA27600C0"
+          }
+        ],
+        "/CdkAssessmentStack/myVPC/PublicSubnet2/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myVPCPublicSubnet2NATGateway78AF2502"
+          }
+        ],
+        "/CdkAssessmentStack/myVPC/PrivateSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myVPCPrivateSubnet1SubnetF3CEBB38"
+          }
+        ],
+        "/CdkAssessmentStack/myVPC/PrivateSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myVPCPrivateSubnet1RouteTable70DB7416"
+          }
+        ],
+        "/CdkAssessmentStack/myVPC/PrivateSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myVPCPrivateSubnet1RouteTableAssociation189124A6"
+          }
+        ],
+        "/CdkAssessmentStack/myVPC/PrivateSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myVPCPrivateSubnet1DefaultRoute9948A7B5"
+          }
+        ],
+        "/CdkAssessmentStack/myVPC/PrivateSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myVPCPrivateSubnet2Subnet2A8990C3"
+          }
+        ],
+        "/CdkAssessmentStack/myVPC/PrivateSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myVPCPrivateSubnet2RouteTable68A045CD"
+          }
+        ],
+        "/CdkAssessmentStack/myVPC/PrivateSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myVPCPrivateSubnet2RouteTableAssociationF574BE88"
+          }
+        ],
+        "/CdkAssessmentStack/myVPC/PrivateSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myVPCPrivateSubnet2DefaultRoute873785C9"
+          }
+        ],
+        "/CdkAssessmentStack/myVPC/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myVPCIGW5063090B"
+          }
+        ],
+        "/CdkAssessmentStack/myVPC/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myVPCVPCGW2EC4F0BF"
+          }
+        ],
+        "/CdkAssessmentStack/myVPC/RestrictDefaultSecurityGroupCustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myVPCRestrictDefaultSecurityGroupCustomResourceF0D6E4AC"
+          }
+        ],
+        "/CdkAssessmentStack/Custom::VpcRestrictDefaultSGCustomResourceProvider/Role": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomVpcRestrictDefaultSGCustomResourceProviderRole26592FE0"
+          }
+        ],
+        "/CdkAssessmentStack/Custom::VpcRestrictDefaultSGCustomResourceProvider/Handler": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomVpcRestrictDefaultSGCustomResourceProviderHandlerDC833E5E"
+          }
+        ],
+        "/CdkAssessmentStack/MySecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MySecurityGroupAC8D442C"
+          }
+        ],
+        "/CdkAssessmentStack/MySecurityGroup/from CdkAssessmentStackLBSecurityGroupF71B74AE:80": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MySecurityGroupfromCdkAssessmentStackLBSecurityGroupF71B74AE80BFE6E103"
+          }
+        ],
+        "/CdkAssessmentStack/myASG": [
+          {
+            "type": "aws:cdk:warning",
+            "data": "desiredCapacity has been configured. Be aware this will reset the size of your AutoScalingGroup on every deployment. See https://github.com/aws/aws-cdk/issues/5215 [ack: @aws-cdk/aws-autoscaling:desiredCapacitySet]",
+            "trace": [
+              "Annotations.addMessage (/tmp/jsii-kernel-E3IWyF/node_modules/aws-cdk-lib/core/lib/annotations.js:1:1392)",
+              "Annotations.addWarningV2 (/tmp/jsii-kernel-E3IWyF/node_modules/aws-cdk-lib/core/lib/annotations.js:1:699)",
+              "new AutoScalingGroup (/tmp/jsii-kernel-E3IWyF/node_modules/aws-cdk-lib/aws-autoscaling/lib/auto-scaling-group.js:1:15158)",
+              "Kernel._Kernel_create (/tmp/tmpb17br0gp/lib/program.js:10071:25)",
+              "Kernel.create (/tmp/tmpb17br0gp/lib/program.js:9742:93)",
+              "KernelHost.processRequest (/tmp/tmpb17br0gp/lib/program.js:11658:36)",
+              "KernelHost.run (/tmp/tmpb17br0gp/lib/program.js:11618:22)",
+              "Immediate._onImmediate (/tmp/tmpb17br0gp/lib/program.js:11619:46)",
+              "process.processImmediate (node:internal/timers:478:21)"
+            ]
+          }
+        ],
+        "/CdkAssessmentStack/myASG/InstanceProfile": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myASGInstanceProfile053766AB"
+          }
+        ],
+        "/CdkAssessmentStack/myASG/LaunchTemplate/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myASGLaunchTemplate6EFA3500"
+          }
+        ],
+        "/CdkAssessmentStack/myASG/ASG": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myASG6C9F5AC0"
+          }
+        ],
+        "/CdkAssessmentStack/SsmParameterValue:--aws--service--ami-amazon-linux-latest--amzn2-ami-hvm-x86_64-gp2:C96584B6-F00A-464E-AD19-53AFF4B05118.Parameter": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SsmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmx8664gp2C96584B6F00A464EAD1953AFF4B05118Parameter"
+          }
+        ],
+        "/CdkAssessmentStack/LB/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LB8A12904C"
+          }
+        ],
+        "/CdkAssessmentStack/LB/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LBSecurityGroup8A41EA2B"
+          }
+        ],
+        "/CdkAssessmentStack/LB/SecurityGroup/to CdkAssessmentStackMySecurityGroup69A72A5F:80": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LBSecurityGrouptoCdkAssessmentStackMySecurityGroup69A72A5F806CF53D68"
+          }
+        ],
+        "/CdkAssessmentStack/LB/HTTP-Listener/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LBHTTPListener6B0DB154"
+          }
+        ],
+        "/CdkAssessmentStack/LB/HTTP-Listener/ASG-TargetGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LBHTTPListenerASGTargetGroup7BA5336A"
+          }
+        ],
+        "/CdkAssessmentStack/MyRDSInstance/SubnetGroup/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyRDSInstanceSubnetGroup5EA5E186"
+          }
+        ],
+        "/CdkAssessmentStack/MyRDSInstance/Secret/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyRDSInstanceSecretE75AB90C"
+          }
+        ],
+        "/CdkAssessmentStack/MyRDSInstance/Secret/Attachment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyRDSInstanceSecretAttachment4BDADC47"
+          }
+        ],
+        "/CdkAssessmentStack/MyRDSInstance/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyRDSInstance48FD439C"
+          }
+        ],
+        "/CdkAssessmentStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/CdkAssessmentStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/CdkAssessmentStack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/CdkAssessmentStack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "CdkAssessmentStack"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  }
+}
